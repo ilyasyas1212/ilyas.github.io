@@ -1,0 +1,91 @@
+<html>
+    <link rel="stylesheet" href="w3.css" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+
+    <div class="w3-bar w3-white w3-card-4">
+        <button class="w3-bar-item w3-card-2 w3-large w3-button " style="font-weight:700" onclick="openKota('Home')">home</button>
+        <button class="w3-bar-item w3-card-2 w3-hover-gray w3-large w3-button w3-left" style=" font-weight:700" onclick="openKota('My')">My profile</button>
+        <button class="w3-bar-item w3-card-2 w3-large w3-button " style="font-weight:700" onclick="openKota('Hoby')">hoby</button>
+        <div class="w3-dropdown-hover w3-card-2 w3-large ">
+            <button class="w3-button" style="font-weight: 700">My Dream Bike</button>
+            <div class="w3-dropdown-content w3-bar-block w3-gray w3-card-4 w3-round-large">
+            <button class="w3-bar-item w3-round-large w3-button" onclick="openKota('Zx6')">zx6</button>
+            <button class="w3-bar-item w3-round-large w3-button" onclick="openKota('Zx10')">Zx10</button>
+            <button class="w3-bar-item w3-round-large w3-button" onclick="openKota('R6')">r6</button>
+        </div>
+          
+    </div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            background-image: url(wallpaper.png);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div id="Home" class="w3-container kota w3-animate-zoom" style="display:block">
+        <center>
+       <font color = white> <h1 style="font-weight:700">MY DREAM MOTORCYCLE</h1></font><hr class="w3-large" width="500px"> 
+    </div>
+
+    <div id="My" class="w3-container kota w3-animate-zoom" style="display:none">
+        <center>
+        <font color = white> <h1 style="font-weight:700">My profile</h1></font>
+        </center>
+        <center>
+        <div class="w3-container  w3-animate-left" > 
+                    <img src="ME.jpg" alt="ME" width="400px">
+                        <div class="w3-container">
+
+        <div class="w3-container w3-animate-right">
+            <div class="w3-card-4 w3-white w3-hover-black w3-round transition" style="width: 50%">
+                <div class="w3-container">
+                    <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-bottom: 5%">Nama :MUHAMMAD ILYASA AR'RAHMAN <br> Nim : 10123104 <br> Kelas : IF-3 <br> My Socmed : </h1>
+                    <a href="https://www.instagram.com/cacayassa/" class="w3-button" style="margin-bottom: 10%"><img src="Instagram.svg.png" alt="instagram" width="75px"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </center>
+    </div>
+
+    <div id="Zx6" class="w3-container kota w3-animate-zoom" style="display:none">
+        <center>
+       <font color = white> <h1 style="font-weight:700">Zx6</h1></font>
+       <img src="zx6.png" alt="zx6" width="600px">
+    </div>
+
+    <div id="Zx10" class="w3-container kota w3-animate-zoom" style="display:none">
+        <center>
+       <font color = white> <h1 style="font-weight:700">Zx10</h1></font>
+       <img src="zx10.png" alt="Zx10" width="600px">
+    </div>
+
+    <div id="R6" class="w3-container kota w3-animate-zoom" style="display:none">
+        <center>
+       <font color = white> <h1 style="font-weight:700">R6</h1></font>
+       <img src="r6.png" alt="R6" width="600px">
+    </div>
+
+    <div id="Hoby" class="w3-container kota w3-animate-right" style="display:none">
+        <center>
+        <h1>MY HOBY</h1>
+        <img src="hoby.jpg" alt="HOBY" width="500px">
+        </center>
+    </div>
+
+    <script>
+    function openKota(namaKota)
+    {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namaKota).style.display = "block";
+    }
+    </script>
+</html>
